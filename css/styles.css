@@ -730,3 +730,56 @@ letter-spacing: 0.02em;
     height: 24px;
     fill: var(--icons);
 }
+
+.footer-subscribe{
+margin-left: 80px;
+
+}
+.subsc-text{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.subsc-form{
+    display: flex;
+}
+
+.form-label{
+    display: flex;
+    gap: 24px;
+}
+
+
+.form-input{
+border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.subsc-btn{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 16px;
+        border-radius: 4px;
+            padding: 8px 24px;
+            width: 165px;
+            height: 40px;
+            background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
