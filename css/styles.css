@@ -531,10 +531,7 @@ border-radius: 4px;
 }
 
 .form-block{
-/* display: flex;
-align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column; */
+
     margin-bottom: 8px;
     font-size: 12px;
 line-height: 1.17;
@@ -543,7 +540,9 @@ line-height: 1.17;
 }
 
 .label{
+    display: block;
 margin-bottom: 4px;
+
 }
 
 .modal-name{
@@ -590,13 +589,10 @@ transform: translateY(-50%);
 fill: black;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.block-comment{
+    margin-bottom: 16px;
+}
 
-/* .stopper{
-    border: 1.25px solid #2e2f42;
-        width: 18px;
-        height: 0px;
-        transform: rotate(-90deg);
-} */
 
 .modal-form{
 border: 1px solid #4d5ae5;
