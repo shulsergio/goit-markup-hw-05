@@ -384,7 +384,7 @@ margin-bottom: 72px;
 
 .overlay {
     /* padding: 8px; */
-    background: #var(--iris);
+    background: var(--iris);
     color: #fff;
     font-family: sans-serif;
     position: absolute;
@@ -501,9 +501,9 @@ border: none;
 fill: #ffffff;
 }
 
-.close-btn:active{
+/* .close-btn:active{
     background-color: var(--ocean);
-}
+} */
 
 .modal-header{
     font-family: "Roboto", sans-serif;
@@ -617,10 +617,12 @@ width: 360px;
 
 }
 
-.new-form{
-
+.checkbox-input{
+border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
-.new-form:checked .privacy-span{
+
+.checkbox-input:checked + .privacy-label>.privacy-span{
     border: none;
     background-color: var(--ocean);
     fill: var(--icons);
@@ -632,7 +634,7 @@ width: 360px;
 margin-bottom: 24px;
 }
 
-.new{
+.privacy-label{
 line-height: 1.17;
     font-weight: 400;
     font-size: 12px;
@@ -658,10 +660,10 @@ color: var(--iris);
 /* ----- -button */
 
 .modal-label-btn{
-    display: flex;
+    /* display: flex;
     text-align: center;
-    justify-content: center;
-    margin: 24px auto;
+    justify-content: center; */
+    margin: 0px auto;
     display: block;
     cursor: pointer;
     border: none;
