@@ -535,11 +535,11 @@
         </p>
         <form class="form">
           <div class="form-block">
-            <label for="modal-name" class="label">Name</label>
+            <label for="user-name" class="label">Name</label>
             <div class="form-svg">
               <input
-                name="modal-name"
-                id="modal-name"
+                name="user-name"
+                id="user-name"
                 type="text"
                 class="modal-name"
               />
@@ -552,7 +552,7 @@
           </div>
 
           <div class="form-block">
-            <label for="modal-tel">Phone</label>
+            <label for="modal-tel" class="label">Phone</label>
             <div class="form-svg">
               <input
                 name="modal-tel"
@@ -567,7 +567,7 @@
           </div>
 
           <div class="form-block">
-            <label for="modal-email">Email</label>
+            <label for="modal-email" class="label">Email</label>
             <div class="form-svg">
               <input
                 name="modal-email"
@@ -582,24 +582,24 @@
           </div>
 
           <div class="form-block">
-            <label for="modal-comment">Comment</label>
+            <label for="user-comment" class="label">Comment</label>
             <textarea
-              id="modal-comment"
+              id="user-comment"
+              name="user-comment"
               class="modal-name modal-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-
-          <label class="new">
-            <input type="checkbox" class="new-form" />
-            <div class="block">
-              <!-- -------------- что то тут не так с Р--------------    -->
-              <!-- <p class="modal-privacy">
-                I accept the terms and conditions of the
-                <span>Privacy Policy</span>
-              </p> -->
-            </div>
-          </label>
+          <div class="chbox-block">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+              class="new-form visually-hidden"
+            />
+            <label class="new"> </label>
+          </div>
           <button class="modal-label-btn" type="submit">Send</button>
         </form>
         <!-- ///// -->

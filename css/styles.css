@@ -530,12 +530,11 @@ border-radius: 4px;
 }
 
 .form-block{
-display: flex;
+/* display: flex;
 align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: column;
-margin-bottom: 4px;
-
+    flex-direction: column; */
+    margin-bottom: 8px;
     font-size: 12px;
 line-height: 1.17;
     letter-spacing: 0.04em;
@@ -543,7 +542,7 @@ line-height: 1.17;
 }
 
 .label{
-
+margin-bottom: 4px;
 }
 
 .modal-name{
@@ -571,8 +570,7 @@ color: var(--iris);
     resize: none;
     width: 360px;
     height: 120px;
-padding-left: 16px;
-padding-top: 8px;
+padding: 8px 16px;
 
 }
 .form-svg{
@@ -622,6 +620,11 @@ width: 360px;
 }
 
 /* -------privacy */
+
+.chbox-block{
+margin-bottom: 24px;
+}
+
 
 .new{
     display: flex;
