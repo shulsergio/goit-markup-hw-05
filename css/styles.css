@@ -4,6 +4,7 @@
     --ocean: #404BBF;
     --iris: #4D5AE5;
     --icons: #f4f4fd;
+    --light-slate: #8e8f99;
 }
 /* Стилі для обнулення відступів у елементів */
 h1, h2, h3, h4, h5, h6, p {
@@ -223,7 +224,7 @@ margin: 0 auto 48px;
     width: calc((100% - 72px) / 4);
 }
 .strategy-block{
-    border: 1px solid #8e8f99;
+    border: 1px solid var(--light-slate);
     border-radius: 4px;
     width: 264px;
     height: 112px;
@@ -383,7 +384,7 @@ margin-bottom: 72px;
 
 .overlay {
     /* padding: 8px; */
-    background: #4d5ae5;
+    background: #var(--iris);
     color: #fff;
     font-family: sans-serif;
     position: absolute;
@@ -538,7 +539,7 @@ align-items: flex-start;
     font-size: 12px;
 line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;
+    color: var(--light-slate);
 }
 
 .label{
@@ -571,7 +572,9 @@ color: var(--iris);
     width: 360px;
     height: 120px;
 padding: 8px 16px;
-
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: rgba(46, 47, 66, 0.4);
 }
 .form-svg{
     position: relative;
@@ -614,9 +617,18 @@ width: 360px;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
-    color: #8e8f99;
+    color: var(--light-slate);
     /* ---- */
 
+}
+
+.new-form{
+
+}
+.new-form:checked .privacy-span{
+    border: none;
+    background-color: var(--ocean);
+    fill: var(--icons);
 }
 
 /* -------privacy */
@@ -625,25 +637,27 @@ width: 360px;
 margin-bottom: 24px;
 }
 
-
 .new{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.modal-privacy{
+line-height: 1.17;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
     letter-spacing: 0.04em;
-    color: #8e8f99;
+    color: var(--light-slate);
 }
-.modal-privacy span{
-    line-height: 1.33333;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
+
+.privacy-span{
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+.privacy-href{
+color: var(--iris);
 }
 
 /* ----- -button */
@@ -801,6 +815,7 @@ height: 40px;
     background: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
+
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
